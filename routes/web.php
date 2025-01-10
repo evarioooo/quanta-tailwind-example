@@ -20,5 +20,3 @@ $quanta->componentHandler->addComponent(new Contact("contact"));
 
 $quanta->routeHandler->addRoute(new CleanRoute("home", ["/", "/home", "/home/"], "home"));
 $quanta->routeHandler->addRoute(new CleanRoute("contact", ["/contact", "/contact", "/contact/"], "contact"));
-
-$quanta->processRouting();

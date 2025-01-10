@@ -1,5 +1,9 @@
-DirectoryIndex index.php
-
 RewriteEngine On 
+
+# Leitet die Root-URL an public/index.php weiter
 RewriteRule ^$ public/index.php [L]
-RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
+
+# Leitet alle anderen Anfragen an public/index.php weiter, außer sie betreffen echte Dateien oder Verzeichnisse
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/index.php [L]
