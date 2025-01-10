@@ -1,0 +1,60 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e4ac33fcc32c3c9097dc3647fb515709",
+    "packages": [
+        {
+            "name": "andy16823/quanta",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Andy16823/quanta.git",
+                "reference": "3cffdc23232657a43e97ffef4d0d7e0022c1b2e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Andy16823/quanta/zipball/3cffdc23232657a43e97ffef4d0d7e0022c1b2e2",
+                "reference": "3cffdc23232657a43e97ffef4d0d7e0022c1b2e2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Quanta\\": "Quanta/",
+                    "Quanta\\Core\\": "Quanta/Core"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andy",
+                    "email": "info@andy-designs.de"
+                }
+            ],
+            "description": "A lightweight and modular PHP framework for modern web applications",
+            "support": {
+                "issues": "https://github.com/Andy16823/quanta/issues",
+                "source": "https://github.com/Andy16823/quanta/tree/v1.1.1"
+            },
+            "time": "2025-01-09T23:17:24+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}
