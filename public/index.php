@@ -16,7 +16,7 @@ require_once '../routes/web.php';
 
 require_once("../packages/DiscordWidgetModule/DiscordWidgetModule.php");
 
-$discordWidget = new DiscordWidgetModule('asdasd');
+$discordWidget = new DiscordWidgetModule('1311801047475294271');
 $discordWidget->load($quanta);
 
 $quanta->renderComponent("layout");

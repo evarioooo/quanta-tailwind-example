@@ -10,18 +10,17 @@ class DiscordWidgetModule extends Module
 {
     private ?Quanta $quanta;
     protected $guildId;
-    protected $serverId;
 
-    public function __construct($serverId)
+    public function __construct($guildId)
     {
-        $this->serverId = $serverId;
+        $this->guildId = $guildId;
     }
 
     public function loadServer()
     {
         $client = new Client();
 
-        $response = $client->request('GET', 'https://discord.com/api/v9/guilds/' . $this->serverId . '/widget.json');
+        $response = $client->request('GET', 'https://discord.com/api/v9/guilds/' . $this->guildId . '/widget.json');
 
         return json_decode($response->getBody(), true);
     }
