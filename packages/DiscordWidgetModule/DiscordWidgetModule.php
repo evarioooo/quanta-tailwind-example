@@ -11,8 +11,9 @@ class DiscordWidgetModule extends Module
     private ?Quanta $quanta;
     protected $guildId;
 
-    public function __construct($guildId)
+    public function __construct($moduleId, $guildId)
     {
+        parent::__construct($moduleId);
         $this->guildId = $guildId;
     }
 
