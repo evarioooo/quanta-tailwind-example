@@ -20,5 +20,3 @@ $discordWidget = new DiscordWidgetModule('discordwidget', '1311801047475294271')
 $discordWidget->load($quanta);
 
 $quanta->renderComponent("layout");
-
-?>

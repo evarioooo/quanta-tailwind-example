@@ -6,7 +6,7 @@ class DiscordWidget extends Component
 {
     public function render($quanta, $data)
     {
-        $module = new DiscordWidgetModule();
+        $module = $quanta->moduleHandler->getModuleWithID("discordwidget");
         return $quanta->loadTemplate(
             __DIR__ . '/templates/widget.php',
             [
